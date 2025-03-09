@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_78be3209859d2611d436463ae0aedf5c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_78be3209859d2611d436463ae0aedf5c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_78be3209859d2611d436463ae0aedf5c = L.map(
+                "map_78be3209859d2611d436463ae0aedf5c",
+                {
+                    center: [37.505783, 127.005842],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3f5fb3c0433b588e063551b54016912 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_b3f5fb3c0433b588e063551b54016912.addTo(map_78be3209859d2611d436463ae0aedf5c);
+        
+    
+            var marker_1a1fcec823a6ada16629f89d8a2389ef = L.marker(
+                [37.520603, 126.94243],
+                {}
+            ).addTo(map_78be3209859d2611d436463ae0aedf5c);
+        
+    
+            var icon_d61d1ddf8ff748623d862f9f51684a52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1a1fcec823a6ada16629f89d8a2389ef.setIcon(icon_d61d1ddf8ff748623d862f9f51684a52);
+        
+    
+        var popup_38bf86f24262e6f21b40cd8076de0022 = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_d7f71cfec8b913721f490f9ef23b508f = $(`<div id="html_d7f71cfec8b913721f490f9ef23b508f" style="width: 100.0%; height: 100.0%;"> <iframe width="300" height="200" src="https://www.youtube.com/embed/Pc4nX47k3qI" title="여의도 한강공원 (37.520603, 126.942430) UAM 경로" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>`)[0];
+                popup_38bf86f24262e6f21b40cd8076de0022.setContent(html_d7f71cfec8b913721f490f9ef23b508f);
+            
+        
+
+        marker_1a1fcec823a6ada16629f89d8a2389ef.bindPopup(popup_38bf86f24262e6f21b40cd8076de0022)
+        ;
+
+        
+    
+    
+            marker_1a1fcec823a6ada16629f89d8a2389ef.bindTooltip(
+                `<div>
+                     여의도 한강공원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d46c2c2a2fbd2354b79f2e490685316d = L.marker(
+                [37.561637, 127.038581],
+                {}
+            ).addTo(map_78be3209859d2611d436463ae0aedf5c);
+        
+    
+            var icon_d416e0e8e5525851501d43221d78795b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d46c2c2a2fbd2354b79f2e490685316d.setIcon(icon_d416e0e8e5525851501d43221d78795b);
+        
+    
+        var popup_690cc113cc814925236f0595f5b96910 = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_114eff1c20d72ea0bec4bd29be6239f0 = $(`<div id="html_114eff1c20d72ea0bec4bd29be6239f0" style="width: 100.0%; height: 100.0%;"> <iframe width="300" height="200" src="https://www.youtube.com/embed/oiz13B4aS2A" title="1106_스마트시티게획_왕십리역 UAM경로" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>`)[0];
+                popup_690cc113cc814925236f0595f5b96910.setContent(html_114eff1c20d72ea0bec4bd29be6239f0);
+            
+        
+
+        marker_d46c2c2a2fbd2354b79f2e490685316d.bindPopup(popup_690cc113cc814925236f0595f5b96910)
+        ;
+
+        
+    
+    
+            marker_d46c2c2a2fbd2354b79f2e490685316d.bindTooltip(
+                `<div>
+                     왕십리역
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6d2cf9d18443288ca781e7728a710ce = L.marker(
+                [37.515093, 127.074216],
+                {}
+            ).addTo(map_78be3209859d2611d436463ae0aedf5c);
+        
+    
+            var icon_3e083082a27e97a753edeebc5cbcde53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a6d2cf9d18443288ca781e7728a710ce.setIcon(icon_3e083082a27e97a753edeebc5cbcde53);
+        
+    
+        var popup_90d175315e84ee509bba6dd84c95f857 = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_5a2e29d9aec809d0623ec883136ca9ed = $(`<div id="html_5a2e29d9aec809d0623ec883136ca9ed" style="width: 100.0%; height: 100.0%;"> <iframe width="300" height="200" src="https://www.youtube.com/embed/0uWd5WEudaY" title="UAM 경로 당" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>`)[0];
+                popup_90d175315e84ee509bba6dd84c95f857.setContent(html_5a2e29d9aec809d0623ec883136ca9ed);
+            
+        
+
+        marker_a6d2cf9d18443288ca781e7728a710ce.bindPopup(popup_90d175315e84ee509bba6dd84c95f857)
+        ;
+
+        
+    
+    
+            marker_a6d2cf9d18443288ca781e7728a710ce.bindTooltip(
+                `<div>
+                     잠실종합운동장
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53af7fb76143e3631a1ab8f347b45fc2 = L.marker(
+                [37.509771, 127.05936],
+                {}
+            ).addTo(map_78be3209859d2611d436463ae0aedf5c);
+        
+    
+            var icon_2eac3eb31ee06303b7d4d5883cbeb996 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_53af7fb76143e3631a1ab8f347b45fc2.setIcon(icon_2eac3eb31ee06303b7d4d5883cbeb996);
+        
+    
+        var popup_b993246f25d36cafc22f1895fcd8fc64 = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_760da3c845394aab44562ddca6bb699a = $(`<div id="html_760da3c845394aab44562ddca6bb699a" style="width: 100.0%; height: 100.0%;"> <iframe width="300" height="200" src="https://www.youtube.com/embed/mjAdqNwxQ-M" title="여의도 한국도심공원 출발 UAM 경로" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>`)[0];
+                popup_b993246f25d36cafc22f1895fcd8fc64.setContent(html_760da3c845394aab44562ddca6bb699a);
+            
+        
+
+        marker_53af7fb76143e3631a1ab8f347b45fc2.bindPopup(popup_b993246f25d36cafc22f1895fcd8fc64)
+        ;
+
+        
+    
+    
+            marker_53af7fb76143e3631a1ab8f347b45fc2.bindTooltip(
+                `<div>
+                     한국도심공항
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08fdc9889c569f1a90ed0e898b01c4fd = L.marker(
+                [37.505783, 127.005842],
+                {}
+            ).addTo(map_78be3209859d2611d436463ae0aedf5c);
+        
+    
+            var icon_d0ab0b99ab4ef9e3509b4c3d8acc4f4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_08fdc9889c569f1a90ed0e898b01c4fd.setIcon(icon_d0ab0b99ab4ef9e3509b4c3d8acc4f4b);
+        
+    
+        var popup_b4bef1db9b1a3bee4254bd8c3fbcdcb3 = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_8c0ca598e013cb3ca81c43b0c51192b0 = $(`<div id="html_8c0ca598e013cb3ca81c43b0c51192b0" style="width: 100.0%; height: 100.0%;"> <iframe width="300" height="200" src="https://www.youtube.com/embed/pRJg74et56o" title="241106_스마트시티계획_고속터미널_UAM경로영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>`)[0];
+                popup_b4bef1db9b1a3bee4254bd8c3fbcdcb3.setContent(html_8c0ca598e013cb3ca81c43b0c51192b0);
+            
+        
+
+        marker_08fdc9889c569f1a90ed0e898b01c4fd.bindPopup(popup_b4bef1db9b1a3bee4254bd8c3fbcdcb3)
+        ;
+
+        
+    
+    
+            marker_08fdc9889c569f1a90ed0e898b01c4fd.bindTooltip(
+                `<div>
+                     고속터미널
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8d93387c32cd65940823f35fec646e85 = L.polyline(
+                [[37.520603, 126.94243], [37.561637, 127.038581], [37.515093, 127.074216], [37.509771, 127.05936], [37.505783, 127.005842], [37.520603, 126.94243]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_78be3209859d2611d436463ae0aedf5c);
+        
+    
+            poly_line_8d93387c32cd65940823f35fec646e85.bindTooltip(
+                `<div>
+                     Coast
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
